@@ -30,9 +30,9 @@ export default function Recipes() {
                         </S.Ul>
                     </nav>
                 </S.Section1>
-                <section>
+                <S.Section2>
                     <S.Title>R E C I P E S</S.Title>
-                </section>
+                </S.Section2>
             </S.Header>
             <a name="Recipes" />
             <S.Main>
@@ -85,9 +85,9 @@ export default function Recipes() {
                 </S.SMedia>
                 <nav>
                     <S.Ul>
-                        <S.Li><a href="#About">A B O U T</a></S.Li>
-                        <S.Li><a href="#Recipes">R E C I P E S</a></S.Li>
-                        <S.Li><a href="#Subscribe">S U B S C R I B E</a></S.Li>
+                        <S.Li><a href="#About">ABOUT</a></S.Li>
+                        <S.Li><a href="#Recipes">RECIPES</a></S.Li>
+                        <S.Li><a href="#Subscribe">SUBSCRIBE</a></S.Li>
                     </S.Ul>
                 </nav>
             </S.Footer>
