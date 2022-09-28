@@ -12,16 +12,33 @@ export const GlobalStyle = createGlobalStyle`
 export const Title = styled.h1`
   font-size: 5em;
   margin-bottom: 200px;
+  @media(max-width: 701px){
+    font-size: 4em;
+  }
+  @media(max-width: 650px){
+    font-size: 3.3em;
+  }
+  @media(max-width: 600px){
+    font-size: 2em;
+  }
 `;
 
 export const Header = styled.header`
-  background-image: url("../img/headerBG.png");
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  background-image: url("${headerBG}");
+  background-position: center top;
+  background-size: 95%;
+  background-repeat: no-repeat;
+  height: 625px;
+  width: 100%;
   font-family: "Georama", sans-serif;
+  @media(max-width: 1100px){
+    background-size: 100%;
+    background-position: left top;
+  }
+  @media(max-width: 800px){
+    height: 520px;
+    background-size: 100% 100%;
+  }
 `;
 
 export const Section1 = styled.section`
@@ -29,7 +46,22 @@ export const Section1 = styled.section`
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 50px 20px 50px;
+`;
+
+export const Section2 = styled.section`
+  width: 100%;
+  text-align: center;
+  margin-top: 200px;
+  @media(max-width: 801px){
+    margin-top: 150px;
+  }
+  @media(max-width: 600px){
+    margin-top: 120px;
+  }
+  @media(max-width: 510px){
+    margin-top: 110px;
+  }
 `;
 
 export const Ul = styled.ul`
@@ -54,6 +86,9 @@ export const Li = styled.li`
 export const Main = styled.main`
   background: rgba(242, 244, 241, 1);
   padding-top: 100px;
+  @media(max-width: 890px){
+    padding-top: 50px;
+  }
 `;
 
 export const RecipesFood = styled.section`
@@ -66,16 +101,23 @@ export const RecipesFood = styled.section`
 export const Subtitle = styled.h2`
   width: 100%;
   text-align: center;
-  padding: 40px;
+  padding: 0 0 20px 0;
   font-family: "Georama", sans-serif;
 `;
 
 export const Img = styled.img`
   width: 400px;
+  @media(max-width: 410px){
+    width: 350px;
+  }
 `;
 
 export const Img2 = styled.img`
   width: 50%;
+  @media(max-width: 1100px){
+    width: 70%;
+    padding-top: 55px;
+  }
 `;
 
 export const Div = styled.div`
@@ -111,6 +153,14 @@ export const Centralizer2 = styled.section`
   height: fit-content;
   position: relative;
   top: 155px;
+  @media(max-width: 1500px){
+    top: 80px;
+  }
+  @media(max-width: 1100px){
+    width: 70%;
+    top: 0;
+    padding-bottom: 50px;
+  }
 `;
 
 export const Line2 = styled.p`
@@ -142,13 +192,19 @@ export const AboutP = styled.p`
   margin-top: 100px;
   font-family: "Georama", sans-serif;
   width: 60%;
+  @media(max-width: 1350px){
+    margin-top: 50px
+  }
 `;
 
 export const AboutSec = styled.section`
   margin: 100px 0 0 0;
   background: white;
   display: flex;
-  flex-wrap: wrap;
+  @media(max-width: 1100px){
+    align-items: center;
+    flex-direction: column;
+  }
 `;
 
 export const Subscribe = styled.section`
@@ -175,6 +231,9 @@ export const Input = styled.input`
   height: 50px;
   margin: 25px 0 0 0;
   padding: 5px;
+  @media(max-width: 1100px){
+    width: 95vw;
+  }
 `;
 
 export const Submit = styled.input`
@@ -211,12 +270,30 @@ export const Footer = styled.footer`
         }
     }
   }
+  @media(max-width: 1100px){
+    padding: 45px 10px 45px 10px;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    nav {
+      ul {
+        width: 350px;
+        li {
+          font-size: 0.8em;
+        }
+      }
+
+    }
+  }
 `;
 
 export const SMedia = styled.div`
   display: flex;
   justify-content: space-between;
   width: 250px;
+  @media(max-width: 1100px){
+    width: 250px;
+    margin-top: 20px;
+  }
 `;
 
 export const Media = styled.img`
@@ -227,5 +304,8 @@ export const Media = styled.img`
   &:hover {
     border-radius: 15px;
     border: 3px solid darkgray;
+  }
+  @media(max-width: 1100px){
+    width: 25px;
   }
 `;
